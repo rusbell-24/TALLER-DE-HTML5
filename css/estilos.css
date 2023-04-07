@@ -68,7 +68,6 @@ body{
 .contenedor .info-perfil{
   width: 40%;
   background-color:#0c2639;
-  box-sizing: border-box;
   padding: 10px;
 }
 
