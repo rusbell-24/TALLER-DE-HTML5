@@ -1,0 +1,155 @@
+body{
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #d2efed;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.cabecera {
+  background-color: #0c2639;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 10px;
+  position: relative;
+
+}
+.cabecera h1{
+  color: white;
+  font-size: 40px;
+}
+
+.cabecera .menu{
+  margin: 0;
+  display: flex;
+  padding: 0 10px;
+}
+
+.cabecera ul{
+  list-style: none;
+  display: flex;
+  align-items: end;
+}
+
+.cabecera li {
+  border-bottom: 2px solid white;
+  padding-bottom: 5px;
+  color: white;
+  font-size: 14px;
+}
+
+.cabecera li:hover {
+  border-bottom-color:#2bbfc8;
+  color: #2bbfc8;
+  font-size: 13px;
+}
+
+.btn-navegacion {
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+}
+
+.btn-navegacion a {
+  text-decoration: none;
+  color: inherit;
+  
+}
+
+.contenedor {
+  width: 100%;
+  display: flex;
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+}
+
+.contenedor .info-perfil{
+  width: 40%;
+  background-color:#0c2639;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.contenedor .info-personal {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 14px;
+  line-height: 30px;
+  color:#62e2e9;
+}
+
+.info-perfil-foto {
+  max-width: 150px;
+  margin: 20px 0;
+  border: 10px solid #0c2639;
+  border-radius: 50%;
+  box-shadow: 0 0 20px white;
+}
+
+.info-contacto h2{
+  font-size: 18px;
+  color: #2bbfc8;
+  font-weight: bold;
+  padding-bottom: 5px;
+  border-bottom:2px solid rgba(255, 255, 255, .5) ;
+}
+
+.info-contacto .contacto{
+  display: flex;
+  margin: 15px 0;
+  color: rgba(255, 255, 255, .6);
+  align-items: center;
+}
+
+.info-contacto .contacto img{
+  height: 25px;
+  margin: 0 10px;
+  background-color: #2bbfc8;
+}
+
+.info-profesional {
+  padding: 20px 40px;
+  font-size: 16px;
+  color: #0c2639;
+  text-align: justify;
+  border-right:1px solid#0c2639;
+  margin: 0;
+}
+
+.info-profesional h2{
+  text-transform: uppercase;
+  margin-bottom: 30px ;
+}
+
+.info-profesional section {
+  margin: 40px 0;
+}
+
+.info-profesional .titulo{
+  padding-bottom: 5px;
+  border-bottom:2px solid  #0c2639;
+}
+
+.info-profesional div{
+  margin: 20px 20px;
+  padding: 10px;
+  border-bottom: 1px solid #2bbfc8;
+}
+
+.contenedor .descarga {
+
+  display: flex;
+  justify-content: center;
+  color: #1a5a81;
+  font-size: 20px;
+  padding: 5px;
+  transition: 400ms;
+}
+
+.contenedor .descarga:hover{
+  color: #1a5a81;
+  font-size: 22px;
+}
