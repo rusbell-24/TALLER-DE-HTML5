@@ -6,54 +6,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="/css/estilos.css">
+  <script src="/js/modos.js"></script>
   <title>Hoja de vida RUSBELL</title>
 </head>
-<body>
+<body onload="main()">
   <header class="cabecera">
     <h1>HOJA DE VIDA</h1>
-    <nav class="menu">
-      <ul>
-        <li class="btn-navegacion"><a href="/index.html">Inicio</a></li>
-        <li class="btn-navegacion"><a >Experiencia laboral</a></li>
-        <li class="btn-navegacion"><a href="/Paginas/referencias-personales.html">Referencias personales</a></li>
-        <li class="btn-navegacion"><a href="/Paginas/referencias-familiares.html">Referencias familiares</a></li>
-        <li class="btn-navegacion"><a href="/Paginas/estudios-realizados.html">Estudios realizados</a></li>
-      </ul>
-    </nav>
+    <div>
+      <select id="modos" class="modos" onchange="cambiarModo();">
+        <option value="claro">Modo Claro</option>
+        <option value="oscuro">Modo Oscuro</option>
+        <option value="vintage">Modo Vintage</option>
+      </select>
+      <nav class="menu">
+        <ul>
+          <li class="btn-navegacion"><a href="/index.html">Inicio</a></li>
+          <li class="btn-navegacion"><a >Experiencia laboral</a></li>
+          <li class="btn-navegacion"><a href="/Paginas/referencias-personales.html">Referencias personales</a></li>
+          <li class="btn-navegacion"><a href="/Paginas/referencias-familiares.html">Referencias familiares</a></li>
+          <li class="btn-navegacion"><a href="/Paginas/estudios-realizados.html">Estudios realizados</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <section class="info-profesional">
     <h2 class="titulo">Experiencia Laboral</h2>
     <div>
-      <p><strong>INGETEL</strong></p>
-      <P>Tecnico Instalador</P>
-      <P>Elaboración de TSS y obra civil para proyecto WOM </P>
-      <p>Desde: 07/10/2020</p>
-      <p>Hasta: 31/12/2020</p>
+      <p class="desplegable" onclick="ocultar('informacion1')"><strong>INGETEL</strong> <img src="/images/flecha.png" alt="desplegable"></p>
+      <div id="informacion1">
+        <P>Tecnico Instalador</P>
+        <P>Elaboración de TSS y obra civil para proyecto WOM </P>
+        <p>Desde: 07/10/2020</p>
+        <p>Hasta: 31/12/2020</p>
+      </div>
     </div>
     <div>
-      <p><strong>PARCHETIC</strong></p>
-      <p>Apoyo de apropiacion</p>
-      <p>Coordinacion de docentes para impactar estudiantes de primaria y bachillera con cursos de tecnologia.</p>
-      <p>Desde:23/08/2021 </p>
-      <p>Hasta: 03/12/2021</p>
+      <p class="desplegable" onclick="ocultar('informacion2')"><strong>PARCHETIC</strong><img src="/images/flecha.png" alt="desplegable"></p>
+      <div id="informacion2">
+        <p>Apoyo de apropiacion</p>
+        <p>Coordinacion de docentes para impactar estudiantes de primaria y bachillera con cursos de tecnologia.</p>
+        <p>Desde:23/08/2021 </p>
+        <p>Hasta: 03/12/2021</p>
+      </div>
     </div>
     <div>
-      <p><strong>CRIC</strong></p>
-      <p>Dinamizador WEB</p>
-      <p>Desarrollar paginas informativas haciendo uso de Wordpress y elementor</p>
-      <p>Desde:02/05/2022 </p>
-      <p>Hasta: 02/09/2022</p>
-
+      <p class="desplegable" onclick="ocultar('informacion3')"><strong>CRIC</strong><img src="/images/flecha.png" alt="desplegable"></p>
+      <div id="informacion3">
+        <p>Dinamizador WEB</p>
+        <p>Desarrollar paginas informativas haciendo uso de Wordpress y elementor</p>
+        <p>Desde:02/05/2022 </p>
+        <p>Hasta: 02/09/2022</p>
+      </div>
     </div>
     <div>
-      <p><strong>COOPERATIVA EL BUEN VIVIR</strong></p>
-      <p>Dinamizador WEB</p>
-      <p>Desarrollar un E-commerce haciendo uso  de Wordpress y elementor</p>
-      <p>Desde:08/01/2022 </p>
-      <p>Hasta: 30/09/2022</p>
+      <p class="desplegable" onclick="ocultar('informacion4')"><strong>COOPERATIVA MULTIACTIVA EL BUEN VIVIR</strong><img src="/images/flecha.png" alt="desplegable"></p>
+      <div id="informacion4">
+        <p>Dinamizador WEB</p>
+        <p>Desarrollar un E-commerce haciendo uso  de Wordpress y elementor</p>
+        <p>Desde:08/01/2022 </p>
+        <p>Hasta: 30/09/2022</p>
+      </div>
     </div>
   </section>
-  
 </body>
 </html>

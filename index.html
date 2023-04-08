@@ -6,12 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="/css/estilos.css">
+  <script src="/js/modos.js"></script>
   <title>Hoja de vida RUSBELL</title>
 </head>
-<body>
+<body onload="main()" class="">
   <header class="cabecera">
     <h1>HOJA DE VIDA</h1>
-    <nav class="menu">
+    <div>
+      <select id="modos" class="modos" onclick="cambiarModo();">
+        <option value="claro">Modo Claro</option>
+        <option value="oscuro">Modo Oscuro</option>
+        <option value="vintage">Modo Vintage</option>
+      </select>
+      <nav class="menu">
       <ul>
         <li class="btn-navegacion"><a >Inicio</a></li>
         <li class="btn-navegacion"><a href="/Paginas/experiencia.html">Experiencia laboral</a></li>
@@ -20,6 +27,7 @@
         <li class="btn-navegacion"><a href="/Paginas/estudios-realizados.html">Estudios realizados</a></li>
       </ul>
     </nav>
+    </div>
   </header>
 
   <div class="contenedor">

@@ -9,15 +9,23 @@ body{
 .cabecera {
   background-color: #0c2639;
   display: flex;
+  position: sticky;
+  top: 0;
   justify-content: space-between;
   margin: 0;
   padding: 10px;
-  position: relative;
-
+  text-align: end;
 }
 .cabecera h1{
   color: white;
   font-size: 40px;
+}
+
+.cabecera .modos {
+  background-color: #d2efed;
+  border-radius: 10px;
+  font-weight: bold;
+  text-align: center;
 }
 
 .cabecera .menu{
@@ -151,4 +159,93 @@ body{
 .contenedor .descarga:hover{
   color: #1a5a81;
   font-size: 22px;
+}
+
+
+
+.oscuro {
+  background-color: rgb(32, 32, 44);
+}
+
+.oscuro header, .oscuro section.info-perfil{
+  box-shadow: 0 0 20px #2bbfc8;
+}
+
+.oscuro section.info-profesional{
+  color:#62e2e9;
+  border-color: #d2efed;
+}
+
+.oscuro div {
+  color: #d2efed;
+  border-color:#d2efed;
+}
+
+.oscuro .descarga, .oscuro .descarga:hover {
+  color: #d2efed;
+}
+
+
+.vintage {
+  background-color: #c2bc98;
+}
+
+.vintage header, .vintage section.info-perfil{
+  background-color: #473432;
+}
+
+.vintage .cabecera li:hover {
+  border-bottom-color:#e3af8a;
+  color: #e3af8a;
+  font-size: 13px;
+}
+
+.vintage .modos {
+  background-color:#e3af8a;
+}
+
+.vintage .info-contacto h2 {
+  color: #e4ddb0;
+  border-color: #e4ddb0;
+}
+
+.vintage .info-contacto .contacto{
+  color: #e3af8a;
+}
+
+.vintage .info-contacto .contacto img{
+  background-color: #b78c6e;
+}
+
+.vintage .info-personal{
+  color: #e3af8a;
+}
+
+.vintage section.info-profesional{
+  color:#473432;
+  border-color: #473432;
+}
+
+
+.vintage div {
+  border-color:#514237;
+}
+
+.vintage .descarga, .vintage .descarga:hover {
+  color: #493b32;
+}
+
+.ocultar {
+  display: none;
+}
+
+.desplegable {
+  cursor: pointer;
+}
+
+.desplegable img{
+  width: 15px;
+  margin: 0 5px;
+  background-color: white;
+  border-radius: 50%;
 }
